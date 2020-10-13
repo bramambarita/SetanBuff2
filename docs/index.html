@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form Rahasia</title>
+</head>
+<body>
+    <div class="heading mt-5 mb-5 text-center">
+        <h1 class="text-white">Pendaftaran Sunda Empire Divisi Perang</h1>
+    </div>
+    
+    <div class="kotak">
+        <form>
+            <label for="nama" class="text-white font-weight-bolder">Nama Lengkap</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="nama" placeholder="Ketikkan Disini..." autofocus="autofocus"
+                required>
+            </div>
+            
+            <div class="form-row">
+                <div class="col">
+                    <label for="tmpt" class="text-white font-weight-bolder mt-3">Tempat Lahir</label>
+                    <input type="text" class="form-control" placeholder="Ketikkan Disini..." id="tmpt">
+                </div>
+                <div class="col">
+                    <label for="tgl" class="text-white font-weight-bolder mt-3">Tanggal Lahir</label>
+                    <input type="date" class="form-control" id="tgl">
+                </div>
+            </div>
+
+            <label for="alamat" class="text-white font-weight-bolder mt-3">Alamat Lengkap</label>
+            <div class="form-group">
+                <textarea type="text" class="form-control" id="alamat" placeholder="Ketikkan Disini..." rows="5" required></textarea>
+            </div>
+
+            <label class="text-white font-weight-bolder">Jenis Kelamin</label>
+            <div class="form-group">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="lk" name="jeniskelamin" class="custom-control-input">
+                    <label class="custom-control-label text-white" for="lk">Laki-Laki</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="pr" name="jeniskelamin" class="custom-control-input">
+                    <label class="custom-control-label text-white" for="pr">Perempuan</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="oth" name="jeniskelamin" class="custom-control-input">
+                    <label class="custom-control-label text-white" for="oth">Other</label>
+                </div>    
+            </div>
+
+            <label for="agama" class="text-white font-weight-bolder">Agama</label>
+            <div class="form-group">
+                <select class="custom-select" id="agama">
+                    <option selected>Choose...</option>
+                    <option value="1">Katholik</option>
+                    <option value="2">Islam</option>
+                    <option value="3">Kristen</option>
+                    <option value="4">Hindu</option>
+                    <option value="5">Buddha</option>
+                    <option value="6">Konghucu</option>
+                </select>    
+            </div>
+
+            <label for="status" class="text-white font-weight-bolder">Status</label>
+            <div class="form-group">
+                <select class="custom-select" id="status">
+                    <option selected>Choose...</option>
+                    <option value="1">Mahasiswa/Pelajar</option>
+                    <option value="2">Pegawai</option>
+                    <option value="3">Pengusaha</option>
+                    <option value="4">Pengangguran</option>
+                    <option value="5">Debt Collector</option>
+                    <option value="7">Lainnya</option>
+                </select>    
+            </div>
+
+            <label for="telp" class="text-white font-weight-bolder">No Hp/WA</label>
+            <div class="form-row">
+                <div class="col-3">
+                    <select class="custom-select form-control" id="telp">
+                        <option selected>Choose...</option>
+                        <option value="1">ID (+62)</option>
+                        <option value="2">IT (+98)</option>
+                        <option value="3">UK (+65)</option>
+                        <option value="4">US (+76)</option>
+                        <option value="5">UE (+71)</option>
+                        <option value="6">SG (+55)</option>
+                    </select>    
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="telp" placeholder="Masukkan angka" 
+                    pattern="[0-9]{12}" title="You must enter a twelve digit phone number">
+                </div>
+            </div>  
+
+            <label for="email" class="text-white font-weight-bolder mt-3">Email</label>
+            <div class="input-group">
+                <input type="email" class="form-control" id="email" placeholder="nama@example.com" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+
+            <label for="Password" class="text-white font-weight-bolder mt-3">Password Akun</label>
+            <div class="input-group">
+                <input type="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                placeholder="Masukkan Password">
+            </div>
+
+            <label for="Password" class="text-white font-weight-bolder mt-3">Konfirmasi Password Akun</label>
+            <div class="input-group">
+                <input type="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                placeholder="Konfirmasikan password">
+            </div>
+
+            <label class="text-white font-weight-bolder mt-3">Pilih Hobi</label>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="demo">
+                <label class="custom-control-label text-white font-weight-bolder" for="demo">Demo</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="berantem">
+                <label class="custom-control-label text-white font-weight-bolder" for="berantem">Berantem</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="rusuh">
+                <label class="custom-control-label text-white font-weight-bolder" for="rusuh">Rusuh</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-1">
+                <input type="checkbox" class="custom-control-input" id="selingkuh">
+                <label class="custom-control-label text-white font-weight-bolder" for="selingkuh">Selingkuh</label>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                <input type="text" class="form-control col-7" aria-label="Text input with checkbox" placeholder="Lainnya...">
+            </div>
+
+            <label for="asal" class="text-white font-weight-bolder mt-3">Asal</label>
+            <div class="form-group">
+                <select class="custom-select" id="asal">
+                    <option selected>Choose...</option>
+                    <option value="1">Medan</option>
+                    <option value="2">Jakarta</option>
+                    <option value="3">Padang</option>
+                    <option value="4">Bandung</option>
+                    <option value="5">Semarang</option>
+                    <option value="6">Yogyakarta</option>
+                    <option value="7">Lainnya</option>
+                </select>    
+            </div>
+
+            <label for="alamat" class="text-white font-weight-bolder">Saran & Komentar</label>
+            <div class="form-group">
+                <textarea type="text" class="form-control" id="alamat" placeholder="Untuk Sunda Empire Kedepan" rows="6"></textarea>
+            </div>
+
+            <button type="reset" class="btn btn-warning">Reset</button>
+            <button type="submit" class="btn btn-success float-right">Kirim</button>
+        </form>
+    </div>
+
+    <div class="footer text-center">
+        <p class="mt-2">Copyright &copy By SetanBuff 2020</p>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
